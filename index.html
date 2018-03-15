@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Heat's Sport Bar</title>
+  <link href="css/main.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/owl.carousel.min.css" rel="stylesheet">
+  <link href="css/owl.theme.default.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ceviche+One" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/icon.png">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header>
+      <div id="Name"><h1>Heat's Sports Bar</h1></div>
+      <div id="Logo"><img src="img/logo.jpg" alt=""></div>
+    </header>
+
+    <main>
+      <div id="Carousel">
+        <div class="owl-carousel owl-theme">
+          <div><img src="img/burger.jpg" alt=""></div>
+          <div><img src="img/nachos.jpg" alt=""></div>
+          <div><img src="img/pizza.jpg" alt=""></div>
+          <div><img src="img/steak.jpg" alt=""></div>
+          <div><img src="img/wings.jpg" alt=""></div>
+        </div>
+      </div>
+
+      <div id="Menu"><a href="file:///C:/Users/cmcbro9174/web%20design/Heat's%20Sports%20Bar/menu.html">Menu</a></div>
+      <div id="Map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114964.38943638183!2d-80.29949954226453!3d25.78254531277217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b4e55bdd627f%3A0x5f2bc6bfc72fade2!2sSouth+Pointe+Park+Pier!5e0!3m2!1sen!2sus!4v1519402952588" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+    </main>
+
+    <footer>
+      <div id="Contact"><h2>Contact Us<br>
+         Email: Heatsbar@gmail.com
+         <br>
+        Phone: (864)174-8445</h2></div>
+      <div id="Credits"><h2>Christian M </h2></div>
+    </footer>
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+  <!-- owl carousel stuff -->
+  <script src="js/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.owl-carousel').owlCarousel({
+          dots: true,
+          items: 1,
+          loop: true,
+          margin: 10,
+          nav: false,
+          autoplay:true,
+          autoplayTimeout:2500,
+          autoplayHoverPause:true
+      })
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,269 @@
+/* Color Palette
+  White: #ffffff;
+  Black: #000000;
+  Medium Gray: #999999;
+  Light Gray: #dddddd;
+  Light blue: #99ffff;
+
+*/
+
+
+/*********** Begin Layout Styles ***********/
+body {
+  background-image: url("../img/heat.jpg");
+
+}
+
+div.container {
+  background-color: #000000;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px; /* disable this line if you want full-width layouts */
+}
+
+header, main, footer {
+  padding: 15px;
+  margin: 15px;
+}
+
+/* phones (base layout is mobile-first) */
+header {
+  border: 3px solid #990000; /* disable this line once layout works */
+  display: grid;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "Name"
+    "Logo";
+}
+
+main {
+  border: 3px solid #009900; /* disable this line once layout works */
+  display: grid;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "Carousel"
+    "Menu"
+    "Map";
+}
+
+footer {
+  border: 3px solid #000099; /* disable this line once layout works */
+  display: grid;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "Contact"
+    "Credits";
+}
+
+/* tablets and small laptops */
+@media (min-width: 600px) {
+
+  header {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "Name Logo";
+  }
+
+  main {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "Carousel Carousel"
+      "Menu Map"
+  }
+
+  footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "Contact Credits";
+  }
+}
+
+/* desktops */
+@media (min-width: 900px) {
+  header {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "Name Logo";
+  }
+
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "Carousel Carousel Carousel"
+      "Menu Menu Map"
+  }
+
+  footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "Contact Credits";
+  }
+}
+
+div {
+  /* border: 1px solid #999999; disable this line once layout works */
+  /* text-align: center;  disable this line once layout works */
+}
+
+main div {
+  /*   min-height: 80px; disable this line once layout works */
+}
+
+div#Name {
+  grid-area: Name;
+}
+
+div#Logo {
+  grid-area: Logo;
+}
+
+div#Carousel {
+  grid-area: Carousel;
+  overflow: hidden;
+}
+
+div#Menu {
+  grid-area: Menu;
+}
+
+div#Map {
+  grid-area: Map;
+}
+
+div#Contact {
+  grid-area: Contact;
+}
+
+div#Credits {
+  grid-area: Credits;
+}
+
+div#carousel {
+grid-area: carousel;
+overflow: hidden;
+}
+
+
+/*********** End Layout Styles ***********/
+
+
+/*********** Begin Content Styles ***********/
+
+/* Headings */
+h1 {
+   font-family: 'Ceviche One', cursive;
+   font-size: 70px;
+   color: #F87200;
+}
+
+h2 {
+   font-family: 'Ceviche One', cursive;
+   font-size: 30px;
+   color: #F87200;
+   max-width: 100%;
+}
+
+h3 {
+color: #ffffff;
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+/* Paragraphs and lists */
+
+p {
+
+}
+
+ol {
+
+}
+
+ul {
+
+}
+
+li {
+
+}
+
+/* tables */
+
+table {
+
+}
+
+caption {
+
+}
+
+tr {
+
+}
+
+th {
+
+}
+
+td {
+
+}
+
+/* images */
+img {
+ max-width: 100%;
+}
+iframe{
+  max-width: 100%;
+}
+/* links */
+
+a:link {
+  font-family: 'Ceviche One', cursive;
+  font-size: 30px;
+  color: #F87200;
+  max-width: 100%;
+}
+
+a:visited {
+  font-family: 'Ceviche One', cursive;
+  font-size: 30px;
+  color: #F87200;
+  max-width: 100%;
+}
+
+a:hover {
+  font-family: 'Ceviche One', cursive;
+  font-size: 30px;
+  color: #F87200;
+  max-width: 100%;
+}
+
+a:active {
+  font-family: 'Ceviche One', cursive;
+  font-size: 30px;
+  color: #F87200;
+  max-width: 100%;
+}
+
+/* forms */
+
+
+
+/*********** End Content Styles ***********/
